@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bits & Bytes - Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bits & Bytes</h1>
+        <p>Best byte around town</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Return To Menu</a>
+    </nav>
+
+    <main>
+        <form method="POST" action="https://example.com/api/reservation">
+            <div>
+                <label for="nameId">Name: </label>
+                <input type="text" id="nameId" name="name" />
+            </div>
+            <div>
+                <label for="numGuestsId">Number of Guests:</label>
+                <input id="numGuestsId" name="numGuests" type="number" min="1" max="10" />
+            </div>
+            <div>
+                <label for="dateId">Date:</label>
+                <input id="dateId" name="date" type="date" />
+            </div>
+            <div>
+                <label for="timeId">Time:</label>
+                <input id="timeId" name="time" type="time" />
+            </div>
+            <div>
+                <label for="specialOccasionId">Special Occasion:</label>
+                <input id="specialOccasionId" name="specOcc" type="checkbox" />
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        Copyright 2021 &copy; Bits & Bytes
+    </footer>
+</body>
+
+</html>

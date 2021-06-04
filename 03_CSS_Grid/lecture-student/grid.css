@@ -1,0 +1,47 @@
+header{
+    grid-area: ga-header;/* ga is just a name*/
+}
+#menu-nav{
+    grid-area: ga-menu-nav;
+}
+main{
+    grid-area: ga-main;
+}
+aside{
+    grid-area: ga-aside;
+}
+footer{
+    grid-area: ga-footer;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas:"ga-header ga-header ga-header"
+    "ga-menu-nav ga-main ga-aside"
+    "ga-footer ga-footer ga-footer";
+    gap: 20px;
+    height: 100vh;
+    }
+    @media screen and (max-width: 768px){
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "ga-header"
+            "ga-menu-nav"
+            "ga-main"
+            "ga-aside"
+            "ga-footer";
+        }
+        body{
+            background-color: red;
+        }
+        @media screen and (max-width: 120px){
+            .container{
+                grid-template-columns: 1fr;
+                grid-template-areas: "ga-main";
+            }
+            header{
+                display: none;
+            }
+
+    }

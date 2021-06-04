@@ -1,0 +1,73 @@
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom, darkgray, lightgray);
+    background-attachment: fixed;
+    white-space: nowrap;
+}
+
+div.trello-list {
+    display: inline-block;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 2px 3px;
+    margin-right: 10px;
+    vertical-align: top;
+
+}
+
+div.trello-list h2 {
+    margin: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+div.trello-list ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.trello-list li {
+    list-style: none;  /* removes the numbers */
+    background-color: rgb(255, 255, 255);
+    font-size: .90rem;
+    margin-bottom: 10px;
+    white-space: normal;
+}
+
+div.trello-list li:hover {  /*pseudo-class when hover */
+    background-color: #f5f6f7;
+    color: #092d42;
+}
+
+div.trello-list li:last-child { /* puts the pair at the bottom on top */
+    margin: 0px;
+}
+
+div.trello-list a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    padding: 8px 0px 8px 5px;
+    font-size: .90rem;
+}
+div.trello-list a:hover{
+    background-color: rgba(9, 45, 66, 0.1);
+}
+ header>h1,  
+ header>p{
+    display: inline-block;
+    height: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+    border-right: 1px solid lightgray;
+ }
+

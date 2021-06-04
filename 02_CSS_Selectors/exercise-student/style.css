@@ -1,0 +1,124 @@
+:root {
+  --top-row-height: 120px;
+  --gutter: 20px;
+  --blue:#00adee;
+  --light-blue: rgba(0, 173, 238, 0.4);
+  --green: #8cc36f;
+  --light-green: rgba(170, 239, 135, 0.8);  
+  --bg-color: rgba(192, 192, 192, 0.1);
+  --subheading: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+body {
+  max-width: 2400px;
+  width: 100%;
+}
+
+aside {
+    position: fixed;
+    width: 200px;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-right: 1px solid #00ADEE;
+}
+
+a {
+  text-decoration: none;
+  color: #00ADEE;
+}
+
+aside > img {
+  display: block;  
+  width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+header {
+  display: block;
+  padding-left: 250px;
+  height: 150px;
+  margin-bottom: 50px;
+}
+
+header > p {
+  display: none;
+}
+
+main > img {
+  margin-left: 250px;
+  width: 100%;
+  height: 800;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  padding-left: 0px;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+li {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  font: Tahoma;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+
+}
+
+section {
+  padding-left: 250px;
+}
+
+#what-we-do{
+  display: inline-block;
+  width: 30%;
+  padding-right: 20px;
+
+}
+
+#our-work {
+  display: inline-block;
+  width: 30%;
+  border-left: 1px solid green;
+  border-right: 1px solid green;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contact-us {
+  display: inline-block;
+  width: 30%;
+  padding-left: 20px;
+}
+
+div h2 {
+  color: #8CC36F;
+  margin-bottom: 20px;
+}
+
+
+#social {
+  display: none;
+}
+
+#logos {
+  display: none;
+}
+
+footer p {
+  padding-left: 250px;
+}

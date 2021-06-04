@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body  {         
+          background-color: #cccccc;
+        }
+        p.big {line-height: 1.8;}
+        
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request More recipes</title>
+</head>
+<body class="body2">
+    
+    <header>
+        <h1>Enjoyed What a Falafel!!!</h1>
+        <nav>
+            <a href="../fan-page/index.html">Return to the main page</a>
+
+            </nav>
+        <p>Send us a request for more recipes!!</p>
+        </header>
+        
+        <main>
+            <form method="POST" action="https://example.com/api/recipes" >
+                <div>
+                <label for="nameId">Name: </label>
+                <input type="text" id="nameId" name="name" required/> 
+            </div>
+            <div>
+                <label for="emailAddress">Email address: </label>
+                <input id="Email" name="emailAddress" type="email" required/>
+            </div>
+            <div>
+                <label for="recipeCatogery">Favorite food category: </label>
+                <input type="text" id="recipeCatogery" name="food category"/> 
+            </div>
+            <div>
+                <label for="recipeId">Recipe in mind: </label>
+                <input type="text" id="recipeId" name="Recipe"/> 
+            </div>
+            <div>
+                <label id="ageId" for="number">Age<span>(optional)</span></label>
+                <input type="number" name="age" id="ageId" min="13" max="99" class="form-control" placeholder="Age"/>
+            </div>
+            
+            <div>
+                <label for="dateId">Recipe needed by: </label>
+                <input id="dateId" name="Recipe" type="date"/> 
+            </div>
+            <div>
+                <label for="checkedId">Confirmation that the data is correct: </label>
+                <input id="checkedId" name="Confirmation" type="checkbox"/> 
+               
+            </div>
+            <div>
+               
+                <input  type="submit"/> 
+            </div>
+             
+            </form>
+        </main>
+        <footer>
+            Copyright 2021 &copy; Seror
+        </footer>
+</body>
+</html>
